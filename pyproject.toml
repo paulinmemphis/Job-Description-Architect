@@ -1,0 +1,22 @@
+[project]
+name = "job-description-architect"
+version = "1.0.0"
+description = "App to enhance and manage job descriptions"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.32.0",
+    "pandas>=2.2.0",
+    "pydantic>=2.6.0",
+    "pytest>=8.0.0"
+]
+
+[tool.uv]
+# UV configuration if used
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
