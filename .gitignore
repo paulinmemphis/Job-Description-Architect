@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+.env/
+.env*/
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/cache/
+
+# Test / coverage
+.pytest_cache/
+htmlcov/
+.coverage*
+
+# Logs
+*.log
