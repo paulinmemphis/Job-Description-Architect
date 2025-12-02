@@ -1,5 +1,5 @@
 from typing import Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 
 class JobRecord(BaseModel):
     positionTitle: str = Field(..., description="The title of the position")
@@ -21,5 +21,4 @@ class JobRecord(BaseModel):
     FLSA_status: Optional[str] = Field(default=None)
     SOC_code: Optional[str] = Field(default=None)
 
-    class Config:
-        extra = "allow"  # Allow extra fields present in JSON but not in schema
+    model_config = ConfigDict(extra="allow")  # Allow extra fields present in JSON but not in schema
